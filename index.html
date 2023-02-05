@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Controller</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #eee;
+      }
+      #joystick-container {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 5px solid grey;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #joystick {
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        border-radius: 50%;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      body {
+        overflow: hidden; /* Hide scrollbars */
+      }
+    </style>
+    <div id="joystick-container">
+      <div id="joystick"></div>
+    </div>
+    <h2 style="text-align: center">JOYSTICK</h2>
+    <div id="info" style="text-align: center"></div>
+
+    <div id="app"></div>
+  </body>
+</html>
